@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/scripts/index.js"></script>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <h1>Upload a File</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data" style="display:flex; gap: 10px; flex-direction: column; align-items: center; justify-content: center;">
+      <label for="uploadfile" id="uploadfilebtn">Choose a File
+        <input id="uploadfile" type="file" name="file" accept="*" required>
+      </label>
+      <button type="submit">Upload File</button>
+    </form>
+</body>

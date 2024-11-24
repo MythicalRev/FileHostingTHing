@@ -3,9 +3,12 @@
 <head>
     <script src="/scripts/index.js"></script>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Upload</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
-
+    <h1>Download <%= fileName %></h1>
+    <form action="/dl?fileName=<%= fileName %>" method="POST">
+      <button type="submit">Download File</button>
+    </form>
 </body>

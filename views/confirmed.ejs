@@ -3,9 +3,11 @@
 <head>
     <script src="/scripts/index.js"></script>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Uploaded</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
-
+    <p>File <%= filePath %> Has been Uploaded</p>
+    <br>
+    <p>Use localhost:3000/dl?fileDir=<%= filePath %> to download the file</p>
 </body>
